@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Hackaton</string>
     <string name="title_activity_home">Map</string>
+
+    <string name="item_title">Title</string>
+    <string name="item_position">Position</string>
+    <string name="item_stars">Rating</string>
+    <string name="item_opne">Open</string>
 </resources>
