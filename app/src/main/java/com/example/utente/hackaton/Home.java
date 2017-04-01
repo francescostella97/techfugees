@@ -12,10 +12,12 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 
 import com.google.android.gms.maps.model.Marker;
+import com.jaredrummler.materialspinner.MaterialSpinner;
 import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -30,24 +32,32 @@ import java.io.File;
 public class Home extends AppCompatActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-    String[] cat1 = {"Education", "Jobs", "Transfer Money", "Social Life"};
-
+    String[] cat1 = {"Filter" , "Education", "Jobs", "Transfer Money", "Social Life"};
+    String[] sub1 = {"SubFilter","Schools & Universities" , "Courses" , "Qualification Recognition"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.preview);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_dropdown_item_1line, cat1);
-        MaterialBetterSpinner materialDesignSpinner = (MaterialBetterSpinner)
-                findViewById(R.id.cat1);
-        materialDesignSpinner.setAdapter(arrayAdapter);
 
-        ArrayAdapter<String> arrayAdapter2 = new ArrayAdapter<String>(this,
-                android.R.layout.simple_dropdown_item_1line, cat1);
-        MaterialBetterSpinner materialDesignSpinner2 = (MaterialBetterSpinner)
-                findViewById(R.id.cat2);
-        materialDesignSpinner2.setAdapter(arrayAdapter2);
+
+        MaterialSpinner spinner = (MaterialSpinner) findViewById(R.id.cat1);
+        final MaterialSpinner subspinner = (MaterialSpinner) findViewById(R.id.cat2);
+
+
+        spinner.setItems(cat1);
+        spinner.setOnItemSelectedListener(new MaterialSpinner.OnItemSelectedListener<String>() {
+
+            @Override public void onItemSelected(MaterialSpinner view, int position, long id, String item) {
+                System.out.println(item);
+                if(item.equals("Education")){
+                    subspinner.setItems(sub1);
+                }
+            }
+        });
+
+
+
 
         setTitle("");
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
@@ -101,77 +111,77 @@ public class Home extends AppCompatActivity implements OnMapReadyCallback {
         Distance: 0.686 km  Bearing: 282.908°*/
 
         LatLng rome11 = new LatLng(41.91021462,12.49298996);
-        mMap.addMarker(new MarkerOptions().position(rome11).title("Colosseum"));
+        mMap.addMarker(new MarkerOptions().position(rome11).title("Centro Astalli"));
         mMap.moveCamera( CameraUpdateFactory.newLatLngZoom(rome11 , 14.0f) );
         mMap.moveCamera(CameraUpdateFactory.newLatLng(rome11));
 
         LatLng rome12 = new LatLng(41.90670856,12.49584128);
-        mMap.addMarker(new MarkerOptions().position(rome12).title("Colosseum"));
+        mMap.addMarker(new MarkerOptions().position(rome12).title("Centro Astalli"));
         mMap.moveCamera( CameraUpdateFactory.newLatLngZoom(rome12 , 14.0f) );
         mMap.moveCamera(CameraUpdateFactory.newLatLng(rome12));
 
         LatLng rome13 = new LatLng(89496443,12.50219334);
-        mMap.addMarker(new MarkerOptions().position(rome13).title("Colosseum"));
+        mMap.addMarker(new MarkerOptions().position(rome13).title("Centro Astalli"));
         mMap.moveCamera( CameraUpdateFactory.newLatLngZoom(rome13 , 14.0f) );
         mMap.moveCamera(CameraUpdateFactory.newLatLng(rome13));
 
         LatLng rome14 = new LatLng(41.90416104,12.48828765);
-        mMap.addMarker(new MarkerOptions().position(rome14).title("Colosseum"));
+        mMap.addMarker(new MarkerOptions().position(rome14).title("Centro Astalli"));
         mMap.moveCamera( CameraUpdateFactory.newLatLngZoom(rome14 , 14.0f) );
         mMap.moveCamera(CameraUpdateFactory.newLatLng(rome14));
 
         LatLng rome15 = new LatLng(41.89548608,12.50137056);
-        mMap.addMarker(new MarkerOptions().position(rome15).title("Colosseum"));
+        mMap.addMarker(new MarkerOptions().position(rome15).title("Centro Astalli"));
         mMap.moveCamera( CameraUpdateFactory.newLatLngZoom(rome15 , 14.0f) );
         mMap.moveCamera(CameraUpdateFactory.newLatLng(rome15));
 
         LatLng rome = new LatLng(41.902783,12.496366);
-        mMap.addMarker(new MarkerOptions().position(rome).title("Colosseum"));
+        mMap.addMarker(new MarkerOptions().position(rome).title("Centro Astalli"));
         mMap.moveCamera( CameraUpdateFactory.newLatLngZoom(rome , 14.0f) );
         mMap.moveCamera(CameraUpdateFactory.newLatLng(rome));
 
         LatLng rome2 = new LatLng(41.90933659,12.50080747);
-        mMap.addMarker(new MarkerOptions().position(rome2).title("Colosseum"));
+        mMap.addMarker(new MarkerOptions().position(rome2).title("Centro Astalli"));
         mMap.moveCamera( CameraUpdateFactory.newLatLngZoom(rome2 , 14.0f) );
         mMap.moveCamera(CameraUpdateFactory.newLatLng(rome2));
 
         LatLng rome3 = new LatLng(41.90589379,12.48916479);
-        mMap.addMarker(new MarkerOptions().position(rome3).title("Colosseum"));
+        mMap.addMarker(new MarkerOptions().position(rome3).title("Centro Astalli"));
         mMap.moveCamera( CameraUpdateFactory.newLatLngZoom(rome3 , 14.0f) );
         mMap.moveCamera(CameraUpdateFactory.newLatLng(rome3));
 
         LatLng rome4 = new LatLng(41.90237503,12.4926451);
-        mMap.addMarker(new MarkerOptions().position(rome4).title("Colosseum"));
+        mMap.addMarker(new MarkerOptions().position(rome4).title("Centro Astalli"));
         mMap.moveCamera( CameraUpdateFactory.newLatLngZoom(rome4 , 14.0f) );
         mMap.moveCamera(CameraUpdateFactory.newLatLng(rome4));
 
         LatLng rome5 = new LatLng(41.89396618,12.49823822);
-        mMap.addMarker(new MarkerOptions().position(rome5).title("Colosseum"));
+        mMap.addMarker(new MarkerOptions().position(rome5).title("Centro Astalli"));
         mMap.moveCamera( CameraUpdateFactory.newLatLngZoom(rome5 , 14.0f) );
         mMap.moveCamera(CameraUpdateFactory.newLatLng(rome5));
 
         LatLng rome6 = new LatLng(41.90305286,12.48592884);
-        mMap.addMarker(new MarkerOptions().position(rome6).title("Colosseum"));
+        mMap.addMarker(new MarkerOptions().position(rome6).title("Centro Astalli"));
         mMap.moveCamera( CameraUpdateFactory.newLatLngZoom(rome6 , 14.0f) );
         mMap.moveCamera(CameraUpdateFactory.newLatLng(rome6));
 
         LatLng rome7 = new LatLng(41.89430621,12.49757746);
-        mMap.addMarker(new MarkerOptions().position(rome7).title("Colosseum"));
+        mMap.addMarker(new MarkerOptions().position(rome7).title("Centro Astalli"));
         mMap.moveCamera( CameraUpdateFactory.newLatLngZoom(rome7 , 14.0f) );
         mMap.moveCamera(CameraUpdateFactory.newLatLng(rome7));
 
         LatLng rome8 = new LatLng(41.8998086,12.49462791);
-        mMap.addMarker(new MarkerOptions().position(rome8).title("Colosseum"));
+        mMap.addMarker(new MarkerOptions().position(rome8).title("Centro Astalli"));
         mMap.moveCamera( CameraUpdateFactory.newLatLngZoom(rome8 , 14.0f) );
         mMap.moveCamera(CameraUpdateFactory.newLatLng(rome8));
 
         LatLng rome9 = new LatLng(lat,lang);
-        mMap.addMarker(new MarkerOptions().position(rome9).title("Colosseum"));
+        mMap.addMarker(new MarkerOptions().position(rome9).title("Centro Astalli"));
         mMap.moveCamera( CameraUpdateFactory.newLatLngZoom(rome9 , 14.0f) );
         mMap.moveCamera(CameraUpdateFactory.newLatLng(rome9));
 
         LatLng rome10 = new LatLng(lat,lang);
-        mMap.addMarker(new MarkerOptions().position(rome10).title("Colosseum"));
+        mMap.addMarker(new MarkerOptions().position(rome10).title("Centro Astalli"));
         mMap.moveCamera( CameraUpdateFactory.newLatLngZoom(rome10 , 14.0f) );
         mMap.moveCamera(CameraUpdateFactory.newLatLng(rome10));
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {

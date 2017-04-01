@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Hackaton</string>
+    <string name="app_name">WeMigrants</string>
     <string name="title_activity_home">Map</string>
     <string name="button_done_label">Open</string>
     <string name="item_close">Close</string>

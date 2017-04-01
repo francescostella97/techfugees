@@ -14,9 +14,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_centerHorizontal="true"
-        android:text="Hi Migrant"
+        android:text="We Migrants"
         android:textAlignment="center"
-        android:textSize="70dp" />
+        android:textSize="65dp" />
 
     <EditText
         android:layout_centerHorizontal="true"

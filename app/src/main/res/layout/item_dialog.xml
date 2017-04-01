@@ -16,18 +16,18 @@
         android:weightSum="5">
 
         <TextView
-            android:layout_width="50dp"
+            android:layout_width="49dp"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/fab_margin"
             android:layout_weight="0.5"
-            android:text="Title" />
+            android:text="Name" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/fab_margin"
             android:layout_weight="4.5"
-            android:text="Colusseum" />
+            android:text="Centro Astalli" />
 
     </LinearLayout>
 
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/fab_margin"
             android:layout_weight="0.5"
-            android:text="Position" />
+            android:text="Address" />
 
         <TextView
             android:id="@+id/textView2"
@@ -49,6 +49,50 @@
             android:layout_height="wrap_content"
             android:layout_weight="4.5"
             android:text="Piazza del Colosseo, 1, 00184 Roma, Italy" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="49dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_weight="0.5"
+            android:text="Services" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_weight="4.5"
+            android:text="Volunteering" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="49dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_weight="0.5"
+            android:text="Open/Close" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_weight="4.5"
+            android:text="08:30/18:30" />
+
     </LinearLayout>
 
 

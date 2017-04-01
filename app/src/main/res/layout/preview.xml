@@ -9,16 +9,16 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-        android:id="@+id/cat1"
-        android:layout_margin="@dimen/fab_margin"
-        android:layout_weight="1.2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="Filter"
-        android:textColorHint="#05ab9a"
-        app:met_floatingLabel="normal" />
-    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/cat1"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_weight="1.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Filter"
+            android:textColorHint="#05ab9a"/>
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
         android:id="@+id/cat2"
         android:layout_margin="@dimen/fab_margin"
 
@@ -43,7 +43,7 @@
 
             <android.support.design.widget.FloatingActionButton
                 android:id="@+id/position"
-                android:src="@drawable/compass"
+                android:src="@drawable/ic_my_location_black_24dp"
                 android:tint="@color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
