@@ -14,16 +14,26 @@
             android:id="@+id/item_image"
             android:src="@drawable/col"/>
 
-        <android.support.design.widget.TextInputLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_margin="@dimen/fab_margin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Title     Colusseum"/>
+            android:layout_height="wrap_content"
+            android:weightSum="5">
 
-        </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:layout_weight="0.5"
+                android:text="Title" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_weight="4.5"
+                android:text="Colusseum" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -38,6 +48,7 @@
                 android:text="Position" />
 
             <TextView
+                android:id="@+id/textView2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="4.5"
