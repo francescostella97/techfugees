@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">Hackaton</string>
     <string name="title_activity_home">Map</string>
+    <string name="button_done_label">Open</string>
+    <string name="item_close">Close</string>
 
     <string name="item_title">Title</string>
     <string name="item_position">Position</string>
     <string name="item_stars">Rating</string>
-    <string name="item_opne">Open</string>
+    <string name="item_open">Open</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget ultrices elit. Suspendisse augue dolor, pretium eget orci at, convallis ultrices risus. Nulla interdum gravida dapibus. Donec viverra gravida felis, vel tempor velit pulvinar quis. Morbi eu mauris sit amet ipsum sagittis tempor eget vel ipsum. Donec tincidunt tortor sed.
+    </string>
 </resources>

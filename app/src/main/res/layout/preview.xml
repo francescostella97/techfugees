@@ -5,27 +5,27 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
     <LinearLayout
-        android:weightSum="2"
+        android:weightSum="3"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
         android:id="@+id/cat1"
         android:layout_margin="@dimen/fab_margin"
-        android:layout_weight="1"
+        android:layout_weight="1.2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Categoria 1"
+        android:hint="Filter"
         android:textColorHint="#05ab9a"
         app:met_floatingLabel="normal" />
     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
         android:id="@+id/cat2"
         android:layout_margin="@dimen/fab_margin"
 
-        android:layout_weight="1"
+        android:layout_weight="1.8"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Categoria 2"
+        android:hint="Sub filter"
         android:textColorHint="#05ab9a"
         app:met_floatingLabel="normal" />
     </LinearLayout>
